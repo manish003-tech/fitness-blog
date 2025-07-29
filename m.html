@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2f1847, #ff6a00);
+      color: white;
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .search {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      color: white;
+    }
+
+    .main-feature {
+      display: flex;
+      flex-direction: column;
+      background: #111;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .main-feature img {
+      width: 100%;
+      height: auto;
+    }
+
+    .main-feature-content {
+      padding: 1rem;
+    }
+
+    .main-feature-content h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .recent-posts, .categories {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+
+    .post {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .post img {
+      width: 80px;
+      height: 80px;
+      border-radius: 0.5rem;
+    }
+
+    .post-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .category-list li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Fitness Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <input type="text" class="search" placeholder="Search...">
+    </nav>
+  </header>
+
+  <section class="main-feature">
+    <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg" alt="Workout" />
+    <div class="main-feature-content">
+      <h2>The Best Workouts for Beginners</h2>
+      <p>Apr 10, John Doe</p>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="recent-posts">
+      <h3>Recent Posts</h3>
+      <div class="post">
+        <img src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg" alt="Post" />
+        <div>
+          <div class="post-title">10 Tips for a Healthy Lifestyle</div>
+          <p>Apr 5, John Doe</p>
+        </div>
+      </div>
+      <div class="post">
+        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Post" />
+        <div>
+          <div class="post-title">How to Stay Motivated to Exercise</div>
+          <p>Mar 22, John Doe</p>
+        </div>
+      </div>
+      <div class="post">
+        <img src="https://images.pexels.com/photos/4662438/pexels-photo-4662438.jpeg" alt="Post" />
+        <div>
+          <div class="post-title">The Benefits of Regular Exercise</div>
+          <p>Mar 15, John Doe</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <h3>Categories</h3>
+      <ul class="category-list">
+        <li>Workouts</li>
+        <li>Nutrition</li>
+        <li>Lifestyle</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
